@@ -6,46 +6,85 @@
         <title>Menú Trébede</title>
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body class="bg-[#F5EDE0]">
-        <header class="bg-[#D1B38A] p-4">
-            <nav class="max-w-[900px] mx-auto flex items-center justify-between">
-                <div class="flex space-x-4">
-                    <a href="#" class="text-[#704C27] font-semibold">Inicio</a>
-                    <a href="#" class="text-[#704C27] font-semibold">Cafés</a>
-                    <a href="#" class="text-[#704C27] font-semibold">Sobre nosotros</a>
+    <body class="bg-[#191F2A]" >
+        <header class="bg-[#191F2A] p-4 w-full">
+            <nav class="max-w-[900px] mx-auto flex items-center">
+                <div class="flex-1 flex justify-end space-x-8">
+                    <a href="#" class="text-[#ffff] font-semibold text-2xl">Inicio</a>
+                    <a href="#" class="text-[#ffff] font-semibold text-2xl">Cafés</a>
+                    <a href="#" class="text-[#ffff] font-semibold text-2xl">Nosotros</a>
                 </div>
-                <img src="../resources/images/trebedepng.png" alt="Logo" class="w-34 h-32">
-                <div class="flex space-x-4">
-                    <a href="#" class="text-[#704C27] font-semibold">Menu</a>
-                    <a href="#" class="text-[#704C27] font-semibold">Contacto</a>
+                
+                <div class="mx-8">
+                    <img src="../resources/images/trebedepng.png" alt="Logo" class="w-40 h-24">
+                </div>
+                
+                <div class="flex-1 flex justify-start space-x-8">
+                    <a href="#" class="text-[#ffff] font-semibold text-2xl">Menu</a>
+                    <a href="#" class="text-[#ffff] font-semibold text-2xl">Contacto</a>
                 </div>
             </nav>
         </header>
-        <div class="bg-[#D1B38A] p-8 rounded-xl shadow-lg w-full max-w-[900px] mx-auto my-8">
-            <h1 class="text-center text-4xl font-bold text-[#704C27] mb-6">MENU</h1>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div id="container"
+            class="bg-[#0C0F14] p-8 rounded-xl shadow-lg w-full max-w-[98%] mx-auto my-8 flex flex-col items-center justify-between min-h-screen">
+            <h1 class="text-center text-6xl font-bold text-[#D27640] pt-12 mb-0">MENU</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center self-center my-auto">
                 <!-- Main Course -->
-                <div class="rounded-lg overflow-hidden shadow-lg">
-                    <img class="w-full h-48 object-cover"
+                <div class="rounded-lg overflow-hidden shadow-lg w-[400px] mx-auto transform hover:scale-105 transition-transform duration-300">
+                    <img class="w-full h-80 object-cover"
                         src="../resources/images/principal.jpg"
                         alt="Imagen principal">
-                    <h2 class="bg-[#704C27] text-white text-lg font-semibold p-2 text-center">PRINCIPAL</h2>
-                    <ul class="bg-white p-4">
+                    <h2
+                        class="bg-[#D27640] text-white text-2xl font-bold p-3 text-center">PRINCIPAL</h2>
+                    <ul class="bg-white p-6">
                         <li
-                            class="flex justify-between">Tortilla<span>34</span></li>
-                        <li class="flex justify-between">Pollo a la
-                            parrilla<span>22</span></li>
-                        <li class="flex justify-between">Merluza al
-                            horno<span>24</span></li>
-                        <li class="flex justify-between">Spaghetti
-                            carbonara<span>33</span></li>
-                        <li class="flex justify-between">Pimientos
-                            rellenos<span>23</span></li>
+                            class="flex justify-between py-2 text-lg">Tortilla<span>34€</span></li>
+                        <li class="flex justify-between py-2 text-lg">Pollo a la
+                            parrilla<span>22€</span></li>
+                        <li class="flex justify-between py-2 text-lg">Merluza al
+                            horno<span>24€</span></li>
+                        <li class="flex justify-between py-2 text-lg">Spaghetti
+                            carbonara<span>33€</span></li>
+                        <li class="flex justify-between py-2 text-lg">Pimientos
+                            rellenos<span>23€</span></li>
                     </ul>
                 </div>
 
-           
+                <!-- Beverages -->
+                <div class="rounded-lg overflow-hidden shadow-lg w-[400px] mx-auto transform hover:scale-105 transition-transform duration-300">
+                    <h2
+                        class="bg-[#D27640] text-white text-2xl font-bold p-3 text-center">BEBIDAS</h2>
+                    <ul class="bg-white p-6">
+                        <li
+                            class="flex justify-between py-2 text-lg">Cóctel angel face <span>34€</span></li>
+                        <li class="flex justify-between py-2 text-lg">Whisky con hielo<span>22€</span></li>
+                        <li class="flex justify-between py-2 text-lg">Bloody Mary<span>24€</span></li>
+                        <li class="flex justify-between py-2 text-lg">Daiquiri<span>33€</span></li>
+                        <li class="flex justify-between py-2 text-lg">Mojito<span>23€</span></li>
+                    </ul>
+                    <img class="w-full h-80 object-cover"
+                        src="../resources/images/bebidas.png"
+                        alt="Imagen bebidas">
+                </div>
+
+                <!-- Dessert -->
+                <div class="rounded-lg overflow-hidden shadow-lg w-[400px] mx-auto transform hover:scale-105 transition-transform duration-300">
+                    <img class="w-full h-80 object-cover"
+                        src="../resources/images/postres.jpg"
+                        alt="Imagen postres">
+                    <h2
+                        class="bg-[#D27640] text-white text-2xl font-bold p-3 text-center">POSTRES</h2>
+                    <ul class="bg-white p-6">
+                        <li
+                            class="flex justify-between py-2 text-lg">Coulant de chocolate<span>34€</span></li>
+                        <li class="flex justify-between py-2 text-lg">Helado de plátano<span>22€</span></li>
+                        <li class="flex justify-between py-2 text-lg">Tarta de Santiago<span>24€</span></li>
+                        <li class="flex justify-between py-2 text-lg">Larpeira<span>33€</span></li>
+                        <li class="flex justify-between py-2 text-lg">Macedonia<span>23€</span></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-       
     </body>
 </html>
