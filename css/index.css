@@ -1,0 +1,59 @@
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #d17842 !important;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d17842 !important;
+  }
+
+  #header {
+    height: 901px;
+    position: relative;
+    background-image: url("../assets/website/header-hero.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  #popular-now {
+    height: 341px;
+    position: absolute;
+    left: 50%;
+    bottom: -170.5px;
+    transform: translateX(-50%);
+  }
+
+  .swiper-menu-pagination {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    text-align: center;
+  }
+
+  .swiper-menu-pagination .swiper-pagination-bullet {
+    height: 4px;
+    width: 16px;
+    background-color: rgba(209, 120, 66, 0.4);
+    margin: 0px 6px;
+    padding: 0px;
+    border-radius: 999px;
+  }
+
+  .swiper-menu-pagination .swiper-pagination-bullet-active {
+    width: 38px !important;
+    background-color: #d17842 !important;
+  }
+
+  .about-us-active img {
+    height: 220px;
+    transition: 0.25s ease-in;
+  }
+  .about-us-active .hidden {
+    display: block !important;
+    transition: 0.25s ease-in;
+  }
