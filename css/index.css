@@ -12,12 +12,16 @@
     background: #d17842 !important;
   }
 
-  #header {
-    height: 901px;
-    position: relative;
-    background-image: url("../assets/website/header-hero.png");
-    background-repeat: no-repeat;
-    background-position: right top;
+ #container{
+      height: 901px;
+      position: relative;
+      background:
+        url("../resources/images/header-hero.png") no-repeat right top,
+        linear-gradient(to bottom, black 70%, #111827 30%); /* Dos colores al 50% */
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: auto 60%;
+      position: relative;
   }
 
   #popular-now {
@@ -56,4 +60,8 @@
   .about-us-active .hidden {
     display: block !important;
     transition: 0.25s ease-in;
+  }
+
+  #description{
+    width: 30%;
   }
