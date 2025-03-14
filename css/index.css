@@ -17,7 +17,7 @@
       position: relative;
       background:
         url("../resources/images/header-hero.png") no-repeat right top,
-        linear-gradient(to bottom, black 70%, #111827 30%); /* Dos colores al 50% */
+        linear-gradient(to bottom, black 90%, #111827 10%); /* Dos colores al 50% */
       background-repeat: no-repeat;
       background-position: right top;
       background-size: auto 60%;
