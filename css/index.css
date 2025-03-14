@@ -62,6 +62,6 @@
     transition: 0.25s ease-in;
   }
 
-  #description{
-    width: 30%;
+  .description{
+    width: 50%;
   }
