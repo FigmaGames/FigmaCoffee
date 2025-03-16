@@ -11,13 +11,13 @@
   }
 
  #container{
-      background:
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0) 40%),
-        url("../resources/images/header-hero.png") no-repeat right top,
-        linear-gradient(to bottom, black 83%, #111827 27%); 
-      background-repeat: no-repeat;
-      background-position: right top;
-      background-size: auto 60%;
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0) 40%),
+      url("../resources/images/header-hero.png") no-repeat right top,
+      linear-gradient(to bottom, black 83%, #111827 27%); 
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto 60%;
   }
 
   #mobile-menu {
