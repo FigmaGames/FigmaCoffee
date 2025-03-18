@@ -8,9 +8,9 @@
     .cards-container {
         grid-template-columns: repeat(1, 1fr) !important;
     }
-    
+
     /* Make cards responsive */
-    .cards-container > div {
+    .cards-container>div {
         width: 100% !important;
         max-width: 400px !important;
     }
@@ -20,7 +20,7 @@
     body {
         overflow-x: hidden !important;
     }
-    
+
     #container {
         min-height: 100vh;
         width: 100% !important;
@@ -32,19 +32,34 @@
         border-radius: 0 !important;
         box-sizing: border-box !important;
     }
-    
-    .cards-container > div {
+
+    .cards-container>div {
         width: 100% !important;
         max-width: 100% !important;
     }
-    
-    #container > div {
+
+    #container>div {
         transform: none !important;
         transition: none !important;
     }
-    
-    #container > div:hover {
+
+    #container>div:hover {
         transform: none !important;
         scale: 1 !important;
+    }
+
+    #mobile-menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    #mobile-menu.open {
+        max-height: 300px;
+    }
+
+    #mobile-menu a:hover {
+        transform: translateX(3px);
+        transition: transform 0.2s, color 0.2s;
     }
 }
