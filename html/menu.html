@@ -1,171 +1,282 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Menú Trébede</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <!-- fuente de google -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
-            rel="stylesheet" />
-        <link rel="stylesheet" href="../css/menu.css">
-        <!--iconos -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-    <body class="bg-[#191F2A]">
-        <header class="bg-[#191F2A] p-4 w-full">
-            <!-- Navegacion escritorio -->
-            <nav class="max-w-[900px] mx-auto hidden md:flex items-center">
-                <div class="flex-1 flex justify-end space-x-8">
-                    <a href="./index.html" class="text-[#ffff] font-semibold text-2xl">Inicio</a>
-                    <a href="#" class="text-[#ffff] font-semibold text-2xl">Cafés</a>
-                    <a href="#" class="text-[#ffff] font-semibold text-2xl">Nosotros</a>
-                </div>
-
-                <div class="mx-8">
-                    <a href="./index.html">
-                        <img src="../resources/images/trebede.png" alt="Logo" class="w-40 h-24">
-                    </a>
-                </div>
-
-                <div class="flex-1 flex justify-start space-x-8">
-                    <a href="./menu.html" class="text-[#ffff] font-semibold text-2xl border-b-2 border-[#D27640]">Menú</a>
-                    <a href="./contact.html" class="text-[#ffff] font-semibold text-2xl">Contacto</a>
-                </div>
-            </nav>
-
-            <!-- Navegacion movil -->
-            <nav class="md:hidden px-0 mx-0">
-                <div class="flex justify-between items-center">
-                    <img src="../resources/images/trebede.png" alt="Logo" class="w-32 h-20">
-                    <button id="mobile-menu-button" class="text-white text-3xl focus:outline-none">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-
-                <!--  Menu telefono -->
-                <div id="mobile-menu" class="hidden bg-[#191F2A] pt-4 pb-4 mt-2">
-                    <div class="flex flex-col space-y-4">
-                        <a href="#" class="text-[#ffff] font-semibold text-xl px-4">Inicio</a>
-                        <a href="#" class="text-[#ffff] font-semibold text-xl px-4">Cafés</a>
-                        <a href="#" class="text-[#ffff] font-semibold text-xl px-4">Nosotros</a>
-                        <a href="#" class="text-[#ffff] font-semibold text-xl border-b-2 border-[#D27640] px-4">Menú</a>
-                        <a href="#" class="text-[#ffff] font-semibold text-xl px-4">Contacto</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <div id="container"
-            class="bg-[#0C0F14] p-8 rounded-xl shadow-lg w-full max-w-[98%] mx-auto my-8 flex flex-col items-center justify-between min-h-[80vh] sm:min-h-[80vh] max-sm:min-h-screen">
-            <h1
-                class="text-center text-6xl font-bold text-[#D27640] pt-12 mb-0">MENÚ</h1>
-            <div
-                class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-10 place-items-center self-center mb-auto mt-8 cards-container">
-                <div
-                    class="rounded-lg shadow-lg w-[400px] mx-auto transform hover:scale-105 transition-transform duration-300">
-                    <img class="w-full h-80 object-cover"
-                        src="../resources/images/principal.jpg"
-                        alt="Imagen principal">
-                    <h2
-                        class="bg-[#D27640] text-white text-2xl font-bold p-3 text-center">PRINCIPAL</h2>
-                    <ul class="bg-white p-6">
-                        <li
-                            class="flex justify-between py-2 text-lg">Tortilla<span>34€</span></li>
-                        <li class="flex justify-between py-2 text-lg">Pollo a la
-                            parrilla<span>22€</span></li>
-                        <li class="flex justify-between py-2 text-lg">Merluza al
-                            horno<span>24€</span></li>
-                        <li class="flex justify-between py-2 text-lg">Spaghetti
-                            carbonara<span>33€</span></li>
-                        <li class="flex justify-between py-2 text-lg">Pimientos
-                            rellenos<span>23€</span></li>
-                    </ul>
-                </div>
-
-                <div
-                    class="rounded-lg overflow-hidden shadow-lg w-[400px] mx-auto transform hover:scale-105 transition-transform duration-300">
-                    <h2
-                        class="bg-[#D27640] text-white text-2xl font-bold p-3 text-center">BEBIDAS</h2>
-                    <ul class="bg-white p-6">
-                        <li
-                            class="flex justify-between py-2 text-lg">Cóctel
-                            angel face <span>34€</span></li>
-                        <li class="flex justify-between py-2 text-lg">Whisky con
-                            hielo<span>22€</span></li>
-                        <li class="flex justify-between py-2 text-lg">Bloody
-                            Mary<span>24€</span></li>
-                        <li
-                            class="flex justify-between py-2 text-lg">Daiquiri<span>33€</span></li>
-                        <li
-                            class="flex justify-between py-2 text-lg">Mojito<span>23€</span></li>
-                    </ul>
-                    <img class="w-full h-80 object-cover"
-                        src="../resources/images/bebidas.png"
-                        alt="Imagen bebidas">
-                </div>
-
-                <div
-                    class="rounded-lg overflow-hidden shadow-lg w-[400px] mx-auto transform hover:scale-105 transition-transform duration-300">
-                    <img class="w-full h-80 object-cover"
-                        src="../resources/images/postres.jpg"
-                        alt="Imagen postres">
-                    <h2
-                        class="bg-[#D27640] text-white text-2xl font-bold p-3 text-center">POSTRES</h2>
-                    <ul class="bg-white p-6">
-                        <li
-                            class="flex justify-between py-2 text-lg">Coulant de
-                            chocolate<span>34€</span></li>
-                        <li class="flex justify-between py-2 text-lg">Helado de
-                            plátano<span>22€</span></li>
-                        <li class="flex justify-between py-2 text-lg">Tarta de
-                            Santiago<span>24€</span></li>
-                        <li
-                            class="flex justify-between py-2 text-lg">Larpeira<span>33€</span></li>
-                        <li
-                            class="flex justify-between py-2 text-lg">Macedonia<span>23€</span></li>
-                    </ul>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú Trébede</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fuente de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <!--iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-[#191F2A]">
+    <header class="bg-[#191F2A] p-4 w-full">
+      <!-- Navegacion escritorio -->
+      <nav class="max-w-[900px] mx-auto hidden md:flex items-center">
+        <div class="flex-1 flex justify-end space-x-8">
+          <a href="./index.html" class="text-[#ffff] font-semibold text-2xl"
+            >Inicio</a
+          >
+          <a href="./index.html#cafes" class="text-[#ffff] font-semibold text-2xl">Cafés</a>
+          <a href="./index.html#nosotros" class="text-[#ffff] font-semibold text-2xl">Nosotros</a>
         </div>
-        <footer class="bg-[#191F2A] p-4 mt-8">
-            <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-                <div class="sm:flex sm:items-center sm:justify-between">
-                    <a href="./index.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                        <img src="../resources/images/trebede.png" class="h-14" alt="Trébede Logo" />
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap text-white hover:text-[#D27640] hover:underline">Trébede</span>
-                    </a>
-                    <div class="flex justify-center my-6 gap-6">
-                        <a href="https://instagram.com" target="_blank" class="text-gray-400 hover:text-[#D27640] transition-colors">
-                            <i class="fab fa-instagram fa-2x"></i>
-                        </a>
-                        <a href="https://facebook.com" target="_blank" class="text-gray-400 hover:text-[#D27640] transition-colors">
-                            <i class="fab fa-facebook fa-2x"></i>
-                        </a>
-                        <a href="https://twitter.com" target="_blank" class="text-gray-400 hover:text-[#D27640] transition-colors">
-                            <i class="fab fa-twitter fa-2x"></i>
-                        </a>
-                    </div>
-                    <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-400 sm:mb-0">
-                        <li>
-                            <a href="./index.html" class="hover:text-[#D27640] hover:underline me-4 md:me-6">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="./menu.html" class="hover:text-[#D27640] hover:underline me-4 md:me-6">Menu</a>
-                        </li>
-                        <li>
-                            <a href="./contact.html" class="hover:text-[#D27640] hover:underline">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
 
-                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 Trébede. Todos los derechos reservados.</span>
-            </div>
-        </footer>
-        <script src="../js/menu.js"></script>
-    </body>
+        <div class="mx-8">
+          <a href="./index.html">
+            <img
+              src="../resources/images/trebede.png"
+              alt="Logo"
+              class="w-40 h-24"
+            />
+          </a>
+        </div>
+
+        <div class="flex-1 flex justify-start space-x-8">
+          <a
+            href="./menu.html"
+            class="text-[#ffff] font-semibold text-2xl border-b-2 border-[#D27640]"
+            >Menú</a
+          >
+          <a href="./contact.html" class="text-[#ffff] font-semibold text-2xl"
+            >Contacto</a
+          >
+        </div>
+      </nav>
+
+      <!-- Navegacion movil -->
+      <nav class="md:hidden px-0 mx-0">
+        <div class="flex justify-between items-center">
+          <img
+            src="../resources/images/trebede.png"
+            alt="Logo"
+            class="w-32 h-20"
+          />
+          <button
+            id="mobile-menu-button"
+            class="text-white text-3xl focus:outline-none"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!--  Menu telefono -->
+        <div id="mobile-menu" class="hidden bg-[#191F2A] pt-4 pb-4 mt-2">
+          <div class="flex flex-col space-y-4">
+            <a href="#" class="text-[#ffff] font-semibold text-xl px-4"
+              >Inicio</a
+            >
+            <a href="#" class="text-[#ffff] font-semibold text-xl px-4"
+              >Cafés</a
+            >
+            <a href="#" class="text-[#ffff] font-semibold text-xl px-4"
+              >Nosotros</a
+            >
+            <a
+              href="#"
+              class="text-[#ffff] font-semibold text-xl border-b-2 border-[#D27640] px-4"
+              >Menú</a
+            >
+            <a href="#" class="text-[#ffff] font-semibold text-xl px-4"
+              >Contacto</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div
+      id="container"
+      class="bg-[#0C0F14] p-8 rounded-xl shadow-lg w-full max-w-[98%] mx-auto my-8 flex flex-col items-center justify-between min-h-[80vh] sm:min-h-[80vh] max-sm:min-h-screen"
+    >
+      <h1 class="text-center text-6xl font-bold text-[#D27640] pt-12 mb-0">
+        MENÚ
+      </h1>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-10 place-items-center self-center mb-auto mt-8 cards-container"
+      >
+        <div
+          class="rounded-lg shadow-lg w-[400px] mx-auto transform hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            class="w-full h-80 object-cover"
+            src="../resources/images/principal.jpg"
+            alt="Imagen principal"
+          />
+          <h2
+            class="bg-[#D27640] text-white text-2xl font-bold p-3 text-center"
+          >
+            PRINCIPAL
+          </h2>
+          <ul class="bg-white p-6">
+            <li class="flex justify-between py-2 text-lg">
+              Tortilla<span>34€</span>
+            </li>
+            <li class="flex justify-between py-2 text-lg">
+              Pollo a la parrilla<span>22€</span>
+            </li>
+            <li class="flex justify-between py-2 text-lg">
+              Merluza al horno<span>24€</span>
+            </li>
+            <li class="flex justify-between py-2 text-lg">
+              Spaghetti carbonara<span>33€</span>
+            </li>
+            <li class="flex justify-between py-2 text-lg">
+              Pimientos rellenos<span>23€</span>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="rounded-lg overflow-hidden shadow-lg w-[400px] mx-auto transform hover:scale-105 transition-transform duration-300"
+        >
+          <h2
+            class="bg-[#D27640] text-white text-2xl font-bold p-3 text-center"
+          >
+            BEBIDAS
+          </h2>
+          <ul class="bg-white p-6">
+            <li class="flex justify-between py-2 text-lg">
+              Cóctel angel face <span>34€</span>
+            </li>
+            <li class="flex justify-between py-2 text-lg">
+              Whisky con hielo<span>22€</span>
+            </li>
+            <li class="flex justify-between py-2 text-lg">
+              Bloody Mary<span>24€</span>
+            </li>
+            <li class="flex justify-between py-2 text-lg">
+              Daiquiri<span>33€</span>
+            </li>
+            <li class="flex justify-between py-2 text-lg">
+              Mojito<span>23€</span>
+            </li>
+          </ul>
+          <img
+            class="w-full h-80 object-cover"
+            src="../resources/images/bebidas.png"
+            alt="Imagen bebidas"
+          />
+        </div>
+
+        <div
+          class="rounded-lg overflow-hidden shadow-lg w-[400px] mx-auto transform hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            class="w-full h-80 object-cover"
+            src="../resources/images/postres.jpg"
+            alt="Imagen postres"
+          />
+          <h2
+            class="bg-[#D27640] text-white text-2xl font-bold p-3 text-center"
+          >
+            POSTRES
+          </h2>
+          <ul class="bg-white p-6">
+            <li class="flex justify-between py-2 text-lg">
+              Coulant de chocolate<span>34€</span>
+            </li>
+            <li class="flex justify-between py-2 text-lg">
+              Helado de plátano<span>22€</span>
+            </li>
+            <li class="flex justify-between py-2 text-lg">
+              Tarta de Santiago<span>24€</span>
+            </li>
+            <li class="flex justify-between py-2 text-lg">
+              Larpeira<span>33€</span>
+            </li>
+            <li class="flex justify-between py-2 text-lg">
+              Macedonia<span>23€</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-[#191F2A] p-4 mt-8">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="./index.html"
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="../resources/images/trebede.png"
+              class="h-14"
+              alt="Trébede Logo"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap text-white hover:text-[#D27640] hover:underline"
+              >Trébede</span
+            >
+          </a>
+          <div class="flex justify-center my-6 gap-6">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="text-gray-400 hover:text-[#D27640] transition-colors"
+            >
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              class="text-gray-400 hover:text-[#D27640] transition-colors"
+            >
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              class="text-gray-400 hover:text-[#D27640] transition-colors"
+            >
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+          </div>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-400 sm:mb-0"
+          >
+            <li>
+              <a
+                href="./index.html"
+                class="hover:text-[#D27640] hover:underline me-4 md:me-6"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="./menu.html"
+                class="hover:text-[#D27640] hover:underline me-4 md:me-6"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contact.html"
+                class="hover:text-[#D27640] hover:underline"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2025 Trébede. Todos los derechos reservados.</span
+        >
+      </div>
+    </footer>
+    <script src="../js/menu.js"></script>
+  </body>
 </html>
