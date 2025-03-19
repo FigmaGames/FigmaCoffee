@@ -53,30 +53,45 @@
       <!-- Navegacion movil -->
       <nav class="md:hidden px-0 mx-0">
         <div class="flex justify-between items-center">
+          <button
+            id="mobile-menu-button"
+            class="text-white text-3xl focus:outline-none p-2 hover:text-[#D27640] hover:scale-110 transition-all duration-200"
+            aria-label="Menú principal"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
+            <i class="fas fa-bars"></i>
+          </button>
           <img
             src="../resources/images/trebede.png"
             alt="Logo"
-            class="w-32 h-20" />
-          <button
-            id="mobile-menu-button"
-            class="text-white text-3xl focus:outline-none">
-            <i class="fas fa-bars"></i>
-          </button>
+            class="h-20 w-auto object-contain" />
         </div>
 
         <!--  Menu telefono -->
-        <div id="mobile-menu" class="hidden bg-[#191F2A] pt-4 pb-4 mt-2">
-          <div class="flex flex-col space-y-4">
-            <a href="#"
-              class="text-[#ffff] font-semibold text-xl px-4">Inicio</a>
-            <a href="#"
-              class="text-[#ffff] font-semibold text-xl px-4">Cafés</a>
-            <a href="#"
-              class="text-[#ffff] font-semibold text-xl px-4">Nosotros</a>
-            <a href="#" class="text-[#ffff] font-semibold text-xl px-4">Menu</a>
+        <div
+          id="mobile-menu"
+          class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+          <div class="flex flex-col space-y-4 pt-2 pb-4 items-start">
             <a
-              href="#"
-              class="text-[#ffff] font-semibold text-xl px-4 border-b-2 border-[#D27640]">Contacto</a>
+              href="./index.html"
+              class="text-white font-semibold text-xl px-4 text-left hover:text-[#D27640] transition-colors"
+              aria-label="Ir a la página de inicio">Inicio</a>
+            <a
+              href="./index.html#cafes"
+              class="text-white font-semibold text-xl px-4 text-left hover:text-[#D27640] transition-colors"
+              aria-label="Ver la sección de cafés">Cafés</a>
+            <a
+              href="./index.html#nosotros"
+              class="text-white font-semibold text-xl px-4 text-left hover:text-[#D27640] transition-colors"
+              aria-label="Saber más sobre nosotros">Nosotros</a>
+            <a
+              href="./menu.html"
+              class="text-white font-semibold text-xl px-4 text-left hover:text-[#D27640] transition-colors border-b-2 border-[#D27640]"
+              aria-label="Ver el menú completo">Menú</a>
+            <a
+              href="./contact.html"
+              class="text-white font-semibold text-xl px-4 text-left hover:text-[#D27640] transition-colors"
+              aria-label="Ir a la página de contacto">Contacto</a>
           </div>
         </div>
       </nav>
